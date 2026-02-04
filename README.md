@@ -1,2 +1,2 @@
 # pps_python_git_docker
-practica
+Aplicacion estilo galleta de la fortuna (realmente es una servilleta pero bueno)

@@ -1,2 +1,5 @@
 def frotar(n_frases: int = 1) -> list:
-    pass
+    if n_frases < 1:
+        return []
+
+    return ["La fortuna te sonrie"] * n_frases

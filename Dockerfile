@@ -12,10 +12,10 @@ RUN pip install --no-cache-dir --upgrade pip \
 FROM python:3.11-slim
 
 WORKDIR /app
+ENV PYTHONUNBUFFERED=1
 
 # Copiamos las dependencias ya instaladas
 COPY --from=dependencies /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
-COPY --from=dependencies /usr/local/bin /usr/local/bin
 
 # Copiamos el código de la aplicación
 COPY . .

@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hola_mundo():
-    frases = frotar(3)
+    frases = frotar()
     return jsonify(frases)
 
 if __name__ == "__main__":

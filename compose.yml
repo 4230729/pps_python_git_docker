@@ -1,0 +1,25 @@
+version: "1.3"
+
+services:
+
+  mongo:
+    image: mongo
+    container_name: mongo_bayeta
+    ports:
+      - "27017:27017"
+    networks:
+      - bayeta_net
+
+  bayeta:
+    build: .
+    container_name: bayeta_app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    networks:
+      - bayeta_net
+
+networks:
+  bayeta_net:
+    driver: bridge

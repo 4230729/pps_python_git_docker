@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import random
 
-MONGO_URI = "mongodb://mongo_bayeta:27017"
+MONGO_URI = "mongodb://mongo:27017"
 DB_NAME = "bayeta"
 COLLECTION = "frases_auspiciosas"
 

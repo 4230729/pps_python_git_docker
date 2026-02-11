@@ -7,7 +7,7 @@ Mira las dependencia de tu entorno virtual, deberias tener solo pip version 24.0
 Sino ejecuta este comando en un nuevo entorno virtual:
 - python -m pip install --upgrade pip==24.0
 
-Docker Desktop instalado en Windows, macOS o Linux
+Docker Desktop instalado en Windows, macOS o Linux y MongoDB
 En la carpeta del proyecto ejecuta los siguientes comandos
 
 - docker network create bayeta_net

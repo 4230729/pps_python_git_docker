@@ -43,3 +43,17 @@ def consultar(n_frases=3):
 
     frases = list(col.aggregate([{'$sample': {'size': n_frases}}]))
     return [f["frase"] for f in frases]
+
+def insertar(frases):
+    """
+    Inserta nuevas frases en la colección
+    frases -> lista de strings
+    """
+    col = instanciar()
+
+    docs = [{"frase": f} for f in frases if f.strip()]
+    if docs:
+        col.insert_many(docs)
+        return len(docs)
+
+    return 0

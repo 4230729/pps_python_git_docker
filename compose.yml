@@ -1,4 +1,4 @@
-version: "1.3"
+version: "3.8"
 
 services:
 
@@ -7,6 +7,8 @@ services:
     container_name: mongo_bayeta
     ports:
       - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
     networks:
       - bayeta_net
 
@@ -23,3 +25,6 @@ services:
 networks:
   bayeta_net:
     driver: bridge
+
+volumes:
+  mongo_data:

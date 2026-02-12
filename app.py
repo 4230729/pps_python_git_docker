@@ -1,5 +1,5 @@
-from flask import Flask, jsonify
-from bayeta import frotar
+from flask import Flask, request, jsonify
+from bayeta import frotar, añadir_frases
 
 app = Flask(__name__)
 

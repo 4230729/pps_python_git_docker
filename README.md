@@ -16,5 +16,10 @@ Y para quitarlo:
 
 - docker compose down
 
-
 Una vez hecho todo esto te puedes meter en http://localhost:5000 y funcionara.
+
+!!! Si no te salen las frases ejecuta este comando:
+
+- docker compose exec bayeta python -c "from mongo_frases import inicializar; inicializar()"
+
+
